@@ -26,11 +26,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.2
 
-      - name: Pull latest changes  
-        run: |  
-          git checkout gh-pages  
-          git pull origin gh-pages
-          git checkout main
+      - name: Fetch all branches  
+        run: git fetch --all
 
       # Runs a single command using the runners shell
       - name: Depoly to github page
