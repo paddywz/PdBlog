@@ -30,4 +30,4 @@ jobs:
       - name: Depoly to github page
         run: |
           pip install mkdocs-material
-          mkdocs gh-deploy --force
+          mkdocs gh-deploy
